@@ -22,7 +22,7 @@ def sendImage(bot, update):
     bot.send_photo(chat_id=chat_id, photo=url)
 
 def main():
-    updater = Updater('845249668:AAHvfzm9BMLgFIMoDkas7464h6yxEnOaLHM')
+    updater = Updater('your_token')
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('sendImage',sendImage))
     updater.start_polling()
